@@ -1,0 +1,14 @@
+@APITest2_HostAddress = http://localhost:5096
+
+GET {{APITest2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+
+POST {{APITest2_HostAddress}}/api/InfoObjects
+X-API-KEY: MyApiKey
+Content-Type: text/csv
+
+Id, Name, Description
+1, Bob, Job
